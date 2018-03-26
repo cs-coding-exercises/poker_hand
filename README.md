@@ -62,7 +62,7 @@ This will both:
 	- The highest scoring hand test ('Straight Flush', Full House, 'Pair of 3s', 'ACE High')
 	- image links of the cards based on the data from the API call
 
-This HTML file will be stored in the /tmp/ folder (unless modified per assumptions).  A browser will open diplaying the file.
+This HTML file will be stored in the /tmp/ folder (unless modified per setup instructions).  A browser will open diplaying the file.
 
 
 
