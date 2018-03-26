@@ -24,6 +24,7 @@ It was developed using 3.5.2
 
 # Running (2 options):
 (1) No Display:
+
 	Simply run (Do not include parameters)
 	$ python3 ~/poker_hand/code/poker_hand.py
 
@@ -40,7 +41,8 @@ Example:
 
 (2) HTML Output Display
 Run with the first argument being 'html' (case insensitive)
-$ python3 ~/poker_hand/code/poker_hand.py html # or HTML, HtMl, etc.
+	
+	$ python3 ~/poker_hand/code/poker_hand.py html # or HTML, HtMl, etc.
 
 This will both:
 	A) output the values and suits of the cards to the console,as in 1) above.
