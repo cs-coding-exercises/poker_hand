@@ -15,10 +15,9 @@ The following files should be present in the suggested locations:
 ```
 
 If you want to run this on a Windows machine:
-- The files can be installed on whichever directory you want (in the same directory).
-- Modify the location of the HTML file in the display_cards() function in the helper file (currently it's /tmp/ for Linux)
-
-- Install Python3
+	- The files can be installed on whichever directory you want (in the same directory).
+	- Modify the location of the HTML file in the display_cards() function in the helper file (currently it's /tmp/ for Linux)
+	- Install Python3
 	
 These should be run using Python 3.  Otherwise resources will need to be installed.
 
@@ -67,11 +66,11 @@ This HTML file will be stored in the /tmp/ folder (unless modified per assumptio
 Currently the unit tests include only calls to the evaluate_hand() in the helper function.
 
 This function receives a five item list of card data, including:
-- the value ('2', '10', 'JACK', 'ACE', etc. )
+	- the value ('2', '10', 'JACK', 'ACE', etc. )
 
-- the suit ("SPADES", "HEARTS", "CLUBS", "DIAMONDS")
+	- the suit ("SPADES", "HEARTS", "CLUBS", "DIAMONDS")
 
-- a numeric weight, based on the value ('2' => 2, '10'=> 10, 'JACK' => 11 , 'ACE'=> 14, etc.)
+	- a numeric weight, based on the value ('2' => 2, '10'=> 10, 'JACK' => 11 , 'ACE'=> 14, etc.)
 
 This is the same data produced by the main poker_hand.py and sent when calling the method.
 
