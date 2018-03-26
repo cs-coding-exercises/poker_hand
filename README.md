@@ -120,7 +120,7 @@ Examples:
 
 ## Assumptions:
 	- '5 of a Kind' hand, is out of scope with 1 deck of cards.
-	- The sorting of the cards by weight and/or suit, though helpful, was not necessary
-	- Hands above pairs did not need more information that the hand itself ('2 pairs', 'Full House, 'Flush', etc.).
+	- The sorting of the cards by weight and/or suit was not necessary
+	- Hands above 'Pair of Xs' did not need more information that the hand itself ('2 pairs', 'Full House, 'Flush', etc.).
   	  Ones below that are clarified ('Pair of 3s', 'King High', etc.)
 	- No Jokers or WildCards are expected to be logically addressed
