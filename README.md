@@ -9,7 +9,7 @@
 
 
 ## Setup:
-The following files should be present in the suggested locations:
+The following files should be present in the same location:
 ```
 	~/poker_hand/poker_hand.py
 	~/poker_hand/poker_hand_helper.py
