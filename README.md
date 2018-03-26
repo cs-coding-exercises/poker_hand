@@ -6,7 +6,7 @@ Poker Hand is an application that:
 - displays the cards and top scoring hand in HTML format (if requested)
 
 
-# Setup:
+## Setup:
 The following files should be present in the suggested locations:
 
 	~/poker_hand/poker_hand.py
@@ -24,7 +24,7 @@ These should be run using Python 3.  Otherwise resources will need to be install
 It was developed using 3.5.2
 
 
-# Running (2 options):
+## Running (2 options):
 (1) No Display:
 
 Simply run (Do not include parameters)
@@ -58,7 +58,7 @@ This will both:
 This HTML file will be stored in the /tmp/ folder (unless modified per assumptions).  A browser will open diplaying the file.
 
 
-# Unit Tests:
+## Unit Tests:
 
 (poker_hand_unit.py)
 Currently the unit tests include only calls to the evaluate_hand() in the helper function.
@@ -109,7 +109,7 @@ Examples:
 
 #-----------------------------
 ```
-# Assumptions:
+## Assumptions:
 	- '5 of a Kind' hand, is out of scope with 1 deck of cards.
 	- The sorting of the cards by weight and/or suit, though helpful, was not necessary
 	- Hands above pairs did not need more information that the hand itself ('2 pairs', 'Full House, 'Flush', etc.)
