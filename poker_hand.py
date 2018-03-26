@@ -66,6 +66,3 @@ print("top_scoring_hand: " + top_scoring_hand)
 
 if display_html:
 	poker_hand_helper.display_cards(cards_json_data, top_scoring_hand)
-
-# remove cache file
-os.system("rm -r __pycache__")
