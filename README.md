@@ -30,7 +30,9 @@ It was developed using 3.5.2
 	$ python3 ~/poker_hand/code/poker_hand.py
 
 This will output the values and suits of the cards to the console:
+
 Example:
+
 	___ cards[x]:value;suit _____
 
 	JACK;DIAMONDS
@@ -82,26 +84,35 @@ straight_flush = [
 ['KING','SPADES', 13], ['ACE', 'SPADES', 14]]
 
 def test01_straight_flush(self):
+
 	print("### test01_straight_flush")
-        expected_msg="!! Expected 'Straight Flush'"
-        hand = poker_hand_helper.evaluate_hand(straight_flush)
-        self.assertNotEqual("Straight" , hand, expected_msg )
-        self.assertNotEqual("Flush" , hand, expected_msg )
-        self.assertEqual( "Straight Flush", hand , expected_msg )
+
+	expected_msg="!! Expected 'Straight Flush'"
+
+	hand = poker_hand_helper.evaluate_hand(straight_flush)
+        
+	self.assertNotEqual("Straight" , hand, expected_msg )
+        
+	self.assertNotEqual("Flush" , hand, expected_msg )
+        
+	self.assertEqual( "Straight Flush", hand , expected_msg )
+
 #-----------------------------
+
 full_house = [
 ['QUEEN','SPADES', 12], ['QUEEN','HEARTS', 12], ['QUEEN', 'CLUBS', 12],
 ['7', 'CLUBS', 7], ['7', 'DIAMONDS', 7]]
 
 def test05_full_house(self):
+
 	print("### test05_full_house")
         expected_msg="!! Expected 'Full House'"
         hand = poker_hand_helper.evaluate_hand(full_house)
         self.assertNotEqual("Three of a Kind" , hand, expected_msg )
         self.assertNotIn("Two Pairs" , hand, expected_msg )
         self.assertNotIn("Pair of" , hand, expected_msg )
-#-----------------------------
 
+#-----------------------------
 
 # assumptions:
 - '5 of a Kind' hand, is out of scope with 1 deck of cards.
