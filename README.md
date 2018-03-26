@@ -31,7 +31,7 @@ If you want to run this on a Windows machine:
 
 
 ## Running (2 options):
-##### (1) No Display:
+##### (1) No HTML Display:
 
 Simply run (Do not include parameters)
 ```
