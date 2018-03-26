@@ -69,7 +69,7 @@ Run the unit test module:
 ```
 	$ python3 ~/poker_hand/poker_hand_unit.py
 ```
-Currently the unit tests include only calls to the evaluate_hand() in the helper function.
+Currently the unit tests include only calls to the evaluate_hand() function in the helper module.
 
 This function receives a five item list of card data, including:
 	
