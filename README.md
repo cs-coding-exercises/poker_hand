@@ -1,4 +1,5 @@
 Poker Hand is an application that:
+
 - accesses five random cards from https://deckofcardsapi.com/
 - prints The values and suits of the cards to the console
 - evaluates the top scoring poker hand based on the cards
@@ -25,22 +26,22 @@ It was developed using 3.5.2
 
 RUNNING (2 options):
 1) No Display:
-Simply run (Do not include parameters)
-$ python3 ~/poker_hand/code/poker_hand.py
+	Simply run (Do not include parameters)
+	$ python3 ~/poker_hand/code/poker_hand.py
 
 This will output the values and suits of the cards to the console:
 Example:
-___ cards[x]:value;suit _____
+	___ cards[x]:value;suit _____
 
-JACK;DIAMONDS
+	JACK;DIAMONDS
 
-9;CLUBS
+	9;CLUBS
 
-KING;HEARTS
+	KING;HEARTS
 
-3;CLUBS
+	3;CLUBS
 
-7;SPADES
+	7;SPADES
 
 
 2) HTML Output Display
@@ -48,10 +49,10 @@ Run with the first argument being 'html' (case insensitive)
 $ python3 ~/poker_hand/code/poker_hand.py html # or HTML, HtMl, etc.
 
 This will both:
-A) output the values and suits of the cards to the console,as in 1) above.
-B) create and display an HTML file including:
-- The highest scoring hand test ('Straight Flush', Full House, 'Pair of 3s', 'ACE High')
-- image links of the cards based on the data from the API call
+	A) output the values and suits of the cards to the console,as in 1) above.
+	B) create and display an HTML file including:
+	- The highest scoring hand test ('Straight Flush', Full House, 'Pair of 3s', 'ACE High')
+	- image links of the cards based on the data from the API call
 
 This HTML file will be stored in the /tmp/ folder (unless modified per assumptions).  A browser will open diplaying the file.
 
@@ -63,8 +64,11 @@ Currently the unit tests include only calls to the evaluate_hand() in the helper
 
 This function receives a five item list of card data, including:
 - the value ('2', '10', 'JACK', 'ACE', etc. )
+
 - the suit ("SPADES", "HEARTS", "CLUBS", "DIAMONDS")
+
 - a numeric weight, based on the value ('2' => 2, '10'=> 10, 'JACK' => 11 , 'ACE'=> 14, etc.)
+
 This is the same data produced by the main poker_hand.py and sent when calling the method.
 
 it then returns the highest scoring hand value and verifies it against the expected hand.
