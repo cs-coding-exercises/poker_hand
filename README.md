@@ -79,7 +79,7 @@ This function receives a five item list of card data, including:
 
 This is the same data produced by the main poker_hand.py and sent when calling the method.
 
-it then returns the highest scoring hand value and verifies it against the expected hand.
+It then returns the highest scoring hand value and verifies it against the expected hand.
 
 The unit tests create several of the card lists and verifies the proper hand/description is returned.
 Examples:
