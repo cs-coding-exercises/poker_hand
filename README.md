@@ -8,6 +8,7 @@ Poker Hand is an application that:
 
 # Setup:
 The following files should be present in the suggested locations:
+
 	~/poker_hand/poker_hand.py
 	~/poker_hand/poker_hand_helper.py
 	~/poker_hand/poker_hand_unit.py
