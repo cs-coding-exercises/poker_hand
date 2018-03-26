@@ -29,7 +29,7 @@ It was developed using 3.5.2
 (1) No Display:
 
 Simply run (Do not include parameters)
-``
+```
 	$ python3 ~/poker_hand/code/poker_hand.py
 ```
 This will output the values and suits of the cards to the console:
