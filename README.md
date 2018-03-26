@@ -15,6 +15,7 @@ The following files should be present in the suggested locations:
 ```
 
 If you want to run this on a Windows machine:
+
 	- The files can be installed on whichever directory you want (in the same directory).
 	- Modify the location of the HTML file in the display_cards() function in the helper file (currently it's /tmp/ for Linux)
 	- Install Python3
