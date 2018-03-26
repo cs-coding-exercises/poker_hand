@@ -1,9 +1,9 @@
 Poker Hand is an application that:
 
-- accesses five random cards from https://deckofcardsapi.com/
-- prints The values and suits of the cards to the console
-- evaluates the top scoring poker hand based on the cards
-- displays the cards and top scoring hand in HTML format (if requested)
+	- accesses five random cards from https://deckofcardsapi.com/
+	- prints The values and suits of the cards to the console
+	- evaluates the top scoring poker hand based on the cards
+	- displays the cards and top scoring hand in HTML format (if requested)
 
 
 ## Setup:
@@ -30,7 +30,7 @@ It was developed using 3.5.2
 
 Simply run (Do not include parameters)
 ```
-	$ python3 ~/poker_hand/code/poker_hand.py
+	$ python3 ~/poker_hand/poker_hand.py
 ```
 This will output the values and suits of the cards to the console:
 
@@ -61,9 +61,9 @@ This HTML file will be stored in the /tmp/ folder (unless modified per assumptio
 
 ## Unit Tests:
 
-'''
-poker_hand_unit.py
-'''
+```
+	$ python3 ~/poker_hand/poker_hand_unit.py
+```
 Currently the unit tests include only calls to the evaluate_hand() in the helper function.
 
 This function receives a five item list of card data, including:
