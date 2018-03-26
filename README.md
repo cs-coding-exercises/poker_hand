@@ -3,7 +3,8 @@
 	1. accesses five random cards from https://deckofcardsapi.com/
 	2. prints The values and suits of the cards to the console
 	3. evaluates the top scoring poker hand based on the cards
-	4. displays the cards and top scoring hand in HTML format (if requested)
+	4. prints the top scoring hand to the console
+	5. displays the cards and top scoring hand in HTML format (if requested)
 
 
 
