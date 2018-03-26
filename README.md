@@ -46,9 +46,9 @@ Example:
 (2) HTML Output Display
 
 Run with the first argument being 'html' (case insensitive)
-
+```
 	$ python3 ~/poker_hand/code/poker_hand.py html # or HTML, HtMl, etc.
-
+```
 This will both:
 
 	A) output the values and suits of the cards to the console,as in (1) above.
@@ -86,7 +86,7 @@ Examples:
 	def test01_straight_flush(self):
 
 		print("### test01_straight_flush")
-		expected_msg="!! Expected 'Straight Flush'"
+		expected_msg = "!! Expected 'Straight Flush'"
 		hand = poker_hand_helper.evaluate_hand(straight_flush)
 		self.assertNotEqual("Straight" , hand, expected_msg )
 		self.assertNotEqual("Flush" , hand, expected_msg )
@@ -99,7 +99,7 @@ Examples:
 	def test05_full_house(self):
 
 		print("### test05_full_house")
-       		expected_msg="!! Expected 'Full House'"
+       		expected_msg = "!! Expected 'Full House'"
         	hand = poker_hand_helper.evaluate_hand(full_house)
         	self.assertNotEqual("Three of a Kind" , hand, expected_msg )
         	self.assertNotIn("Two Pairs" , hand, expected_msg )
