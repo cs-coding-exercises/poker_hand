@@ -61,7 +61,9 @@ This HTML file will be stored in the /tmp/ folder (unless modified per assumptio
 
 ## Unit Tests:
 
-(poker_hand_unit.py)
+'''
+poker_hand_unit.py
+'''
 Currently the unit tests include only calls to the evaluate_hand() in the helper function.
 
 This function receives a five item list of card data, including:
@@ -84,9 +86,9 @@ Examples:
 	['KING','SPADES', 13], ['ACE', 'SPADES', 14]]
 
 	def test01_straight_flush(self):
-
 		print("### test01_straight_flush")
 		expected_msg = "!! Expected 'Straight Flush'"
+
 		hand = poker_hand_helper.evaluate_hand(straight_flush)
 		self.assertNotEqual("Straight" , hand, expected_msg )
 		self.assertNotEqual("Flush" , hand, expected_msg )
@@ -97,11 +99,11 @@ Examples:
 	['7', 'CLUBS', 7], ['7', 'DIAMONDS', 7]]
 
 	def test05_full_house(self):
-
 		print("### test05_full_house")
        		expected_msg = "!! Expected 'Full House'"
-        	hand = poker_hand_helper.evaluate_hand(full_house)
-        	self.assertNotEqual("Three of a Kind" , hand, expected_msg )
+
+		hand = poker_hand_helper.evaluate_hand(full_house)
+		self.assertNotEqual("Three of a Kind" , hand, expected_msg )
         	self.assertNotIn("Two Pairs" , hand, expected_msg )
         	self.assertNotIn("Pair of" , hand, expected_msg )
 #-----------------------------
