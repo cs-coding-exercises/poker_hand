@@ -76,6 +76,7 @@ it then returns the highest scoring hand value and verifies it against the expec
 
 The unit tests create several of the card lists and verifies the proper hand/description is returned.
 Examples:
+'''
 #-----------------------------
 
 	straight_flush = [
@@ -107,7 +108,7 @@ Examples:
         	self.assertNotIn("Pair of" , hand, expected_msg )
 
 #-----------------------------
-
+'''
 # Assumptions:
 	- '5 of a Kind' hand, is out of scope with 1 deck of cards.
 	- The sorting of the cards by weight and/or suit, though helpful, was not necessary
