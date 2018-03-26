@@ -6,6 +6,7 @@
 	4. displays the cards and top scoring hand in HTML format (if requested)
 
 
+
 ## Setup:
 The following files should be present in the suggested locations:
 ```
@@ -63,6 +64,7 @@ This will both:
 This HTML file will be stored in the /tmp/ folder (unless modified per assumptions).  A browser will open diplaying the file.
 
 
+
 ## Unit Tests:
 
 Run the unit test module:
@@ -112,6 +114,9 @@ Examples:
         	self.assertNotIn("Pair of" , hand, expected_msg )
 #-----------------------------
 ```
+
+
+
 ## Assumptions:
 	- '5 of a Kind' hand, is out of scope with 1 deck of cards.
 	- The sorting of the cards by weight and/or suit, though helpful, was not necessary
