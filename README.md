@@ -29,7 +29,7 @@ If you want to run this on a Windows machine:
 
 
 ## Running (2 options):
-###(1) No Display:
+##### (1) No Display:
 
 Simply run (Do not include parameters)
 ```
@@ -46,7 +46,7 @@ KING;HEARTS
 3;CLUBS
 7;SPADES
 ```
-###(2) HTML Output Display
+##### (2) HTML Output Display
 
 Run with the first argument being 'html' (case insensitive)
 ```
