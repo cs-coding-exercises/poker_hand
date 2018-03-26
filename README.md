@@ -45,7 +45,8 @@ Run with the first argument being 'html' (case insensitive)
 	$ python3 ~/poker_hand/code/poker_hand.py html # or HTML, HtMl, etc.
 
 This will both:
-	A) output the values and suits of the cards to the console,as in 1) above.
+
+	A) output the values and suits of the cards to the console,as in (1) above.
 	B) create and display an HTML file including:
 	- The highest scoring hand test ('Straight Flush', Full House, 'Pair of 3s', 'ACE High')
 	- image links of the cards based on the data from the API call
