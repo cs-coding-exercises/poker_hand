@@ -8,10 +8,11 @@ Poker Hand is an application that:
 
 ## Setup:
 The following files should be present in the suggested locations:
-
+```
 	~/poker_hand/poker_hand.py
 	~/poker_hand/poker_hand_helper.py
 	~/poker_hand/poker_hand_unit.py
+```
 
 If you want to run this on a Windows machine:
 - The files can be installed on whichever directory you want (in the same direcotry).
@@ -28,9 +29,9 @@ It was developed using 3.5.2
 (1) No Display:
 
 Simply run (Do not include parameters)
-
+``
 	$ python3 ~/poker_hand/code/poker_hand.py
-
+```
 This will output the values and suits of the cards to the console:
 
 Example:
@@ -78,7 +79,6 @@ The unit tests create several of the card lists and verifies the proper hand/des
 Examples:
 ```
 #-----------------------------
-
 	straight_flush = [
 	['10','SPADES', 10], ['JACK','SPADES', 11], ['QUEEN', 'SPADES', 12],
 	['KING','SPADES', 13], ['ACE', 'SPADES', 14]]
@@ -91,9 +91,7 @@ Examples:
 		self.assertNotEqual("Straight" , hand, expected_msg )
 		self.assertNotEqual("Flush" , hand, expected_msg )
 		self.assertEqual( "Straight Flush", hand , expected_msg )
-
 #-----------------------------
-
 	full_house = [
 	['QUEEN','SPADES', 12], ['QUEEN','HEARTS', 12], ['QUEEN', 'CLUBS', 12],
 	['7', 'CLUBS', 7], ['7', 'DIAMONDS', 7]]
@@ -106,7 +104,6 @@ Examples:
         	self.assertNotEqual("Three of a Kind" , hand, expected_msg )
         	self.assertNotIn("Two Pairs" , hand, expected_msg )
         	self.assertNotIn("Pair of" , hand, expected_msg )
-
 #-----------------------------
 ```
 ## Assumptions:
