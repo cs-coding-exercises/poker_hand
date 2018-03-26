@@ -27,7 +27,8 @@ It was developed using 3.5.2
 # Running (2 options):
 (1) No Display:
 
-	Simply run (Do not include parameters)
+Simply run (Do not include parameters)
+
 	$ python3 ~/poker_hand/code/poker_hand.py
 
 This will output the values and suits of the cards to the console:
@@ -42,8 +43,9 @@ Example:
 	7;SPADES
 
 (2) HTML Output Display
+
 Run with the first argument being 'html' (case insensitive)
-	
+
 	$ python3 ~/poker_hand/code/poker_hand.py html # or HTML, HtMl, etc.
 
 This will both:
@@ -76,39 +78,39 @@ The unit tests create several of the card lists and verifies the proper hand/des
 Examples:
 #-----------------------------
 
-straight_flush = [
-['10','SPADES', 10], ['JACK','SPADES', 11], ['QUEEN', 'SPADES', 12],
-['KING','SPADES', 13], ['ACE', 'SPADES', 14]]
+	straight_flush = [
+	['10','SPADES', 10], ['JACK','SPADES', 11], ['QUEEN', 'SPADES', 12],
+	['KING','SPADES', 13], ['ACE', 'SPADES', 14]]
 
-def test01_straight_flush(self):
+	def test01_straight_flush(self):
 
-	print("### test01_straight_flush")
-	expected_msg="!! Expected 'Straight Flush'"
-	hand = poker_hand_helper.evaluate_hand(straight_flush)
-	self.assertNotEqual("Straight" , hand, expected_msg )
-	self.assertNotEqual("Flush" , hand, expected_msg )
-	self.assertEqual( "Straight Flush", hand , expected_msg )
+		print("### test01_straight_flush")
+		expected_msg="!! Expected 'Straight Flush'"
+		hand = poker_hand_helper.evaluate_hand(straight_flush)
+		self.assertNotEqual("Straight" , hand, expected_msg )
+		self.assertNotEqual("Flush" , hand, expected_msg )
+		self.assertEqual( "Straight Flush", hand , expected_msg )
 
 #-----------------------------
 
-full_house = [
-['QUEEN','SPADES', 12], ['QUEEN','HEARTS', 12], ['QUEEN', 'CLUBS', 12],
-['7', 'CLUBS', 7], ['7', 'DIAMONDS', 7]]
+	full_house = [
+	['QUEEN','SPADES', 12], ['QUEEN','HEARTS', 12], ['QUEEN', 'CLUBS', 12],
+	['7', 'CLUBS', 7], ['7', 'DIAMONDS', 7]]
 
-def test05_full_house(self):
+	def test05_full_house(self):
 
-	print("### test05_full_house")
-        expected_msg="!! Expected 'Full House'"
-        hand = poker_hand_helper.evaluate_hand(full_house)
-        self.assertNotEqual("Three of a Kind" , hand, expected_msg )
-        self.assertNotIn("Two Pairs" , hand, expected_msg )
-        self.assertNotIn("Pair of" , hand, expected_msg )
+		print("### test05_full_house")
+       		expected_msg="!! Expected 'Full House'"
+        	hand = poker_hand_helper.evaluate_hand(full_house)
+        	self.assertNotEqual("Three of a Kind" , hand, expected_msg )
+        	self.assertNotIn("Two Pairs" , hand, expected_msg )
+        	self.assertNotIn("Pair of" , hand, expected_msg )
 
 #-----------------------------
 
 # Assumptions:
-- '5 of a Kind' hand, is out of scope with 1 deck of cards.
-- The sorting of the cards by weight and/or suit, though helpful, was not necessary
-- Hands above pairs did not need more information that the hand itself ('2 pairs', 'Full House, 'Flush', etc.)
-  ones below that are clarified ('Pair of 3s', 'King High', etc.)
-- No Jokers or WildCards are expected to be logically addressed
+	- '5 of a Kind' hand, is out of scope with 1 deck of cards.
+	- The sorting of the cards by weight and/or suit, though helpful, was not necessary
+	- Hands above pairs did not need more information that the hand itself ('2 pairs', 'Full House, 'Flush', etc.)
+  	  ones below that are clarified ('Pair of 3s', 'King High', etc.)
+	- No Jokers or WildCards are expected to be logically addressed
