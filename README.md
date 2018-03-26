@@ -39,16 +39,17 @@ This will output the values and suits of the cards to the console:
 
 Example:
 ```
-	___ cards[x]:value;suit _____
-	JACK;DIAMONDS
-	9;CLUBS
-	KING;HEARTS
-	3;CLUBS
-	7;SPADES
+___ cards[x]:value;suit _____
+JACK;DIAMONDS
+9;CLUBS
+KING;HEARTS
+3;CLUBS
+7;SPADES
 ```
+
 ##### (2) HTML Output Display
 
-Run with the first argument being 'html' (case insensitive)
+Run with the first argument being 'html' (case insensitive):
 ```
 	$ python3 ~/poker_hand/code/poker_hand.py html # or HTML, HtMl, etc.
 ```
@@ -64,6 +65,7 @@ This HTML file will be stored in the /tmp/ folder (unless modified per assumptio
 
 ## Unit Tests:
 
+Run the unit test module:
 ```
 	$ python3 ~/poker_hand/poker_hand_unit.py
 ```
