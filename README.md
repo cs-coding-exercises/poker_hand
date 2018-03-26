@@ -50,7 +50,7 @@ This will both:
 This HTML file will be stored in the /tmp/ folder (unless modified per assumptions).  A browser will open diplaying the file.
 
 
-# unit tests:
+# Unit Tests:
 
 (poker_hand_unit.py)
 Currently the unit tests include only calls to the evaluate_hand() in the helper function.
@@ -77,15 +77,10 @@ straight_flush = [
 def test01_straight_flush(self):
 
 	print("### test01_straight_flush")
-
 	expected_msg="!! Expected 'Straight Flush'"
-
 	hand = poker_hand_helper.evaluate_hand(straight_flush)
-        
 	self.assertNotEqual("Straight" , hand, expected_msg )
-        
 	self.assertNotEqual("Flush" , hand, expected_msg )
-        
 	self.assertEqual( "Straight Flush", hand , expected_msg )
 
 #-----------------------------
@@ -105,7 +100,7 @@ def test05_full_house(self):
 
 #-----------------------------
 
-# assumptions:
+# Assumptions:
 - '5 of a Kind' hand, is out of scope with 1 deck of cards.
 - The sorting of the cards by weight and/or suit, though helpful, was not necessary
 - Hands above pairs did not need more information that the hand itself ('2 pairs', 'Full House, 'Flush', etc.)
