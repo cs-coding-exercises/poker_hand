@@ -14,15 +14,18 @@ The following files should be present in the suggested locations:
 	~/poker_hand/poker_hand_unit.py
 ```
 
-If you want to run this on a Windows machine:
-
-	- The files can be installed on whichever directory you want (in the same directory).
-	- Modify the location of the HTML file in the display_cards() function in the helper file (currently it's /tmp/ for Linux)
-	- Install Python3
-	
 These should be run using Python 3.  Otherwise resources will need to be installed.
 
 It was developed using 3.5.2
+
+If you want to run this on a Windows machine:
+
+	- The files can be installed on whichever directory you want (in the same directory).
+	- Modify the location of the HTML file in the display_cards() function in the helper file 
+	(currently it's /tmp/ for Linux)
+	- Install Python3
+	
+
 
 
 ## Running (2 options):
