@@ -1,9 +1,9 @@
 Poker Hand is an application that:
 
-	- accesses five random cards from https://deckofcardsapi.com/
-	- prints The values and suits of the cards to the console
-	- evaluates the top scoring poker hand based on the cards
-	- displays the cards and top scoring hand in HTML format (if requested)
+	1. accesses five random cards from https://deckofcardsapi.com/
+	2. prints The values and suits of the cards to the console
+	3. evaluates the top scoring poker hand based on the cards
+	4. displays the cards and top scoring hand in HTML format (if requested)
 
 
 ## Setup:
