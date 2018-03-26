@@ -39,12 +39,12 @@ This will output the values and suits of the cards to the console:
 
 Example:
 ```
-___ cards[x]:value;suit _____
-JACK;DIAMONDS
-9;CLUBS
-KING;HEARTS
-3;CLUBS
-7;SPADES
+	___ cards[x]:value;suit _____
+	JACK;DIAMONDS
+	9;CLUBS
+	KING;HEARTS
+	3;CLUBS
+	7;SPADES
 ```
 ##### (2) HTML Output Display
 
