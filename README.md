@@ -66,10 +66,9 @@ This HTML file will be stored in the /tmp/ folder (unless modified per assumptio
 Currently the unit tests include only calls to the evaluate_hand() in the helper function.
 
 This function receives a five item list of card data, including:
+	
 	- the value ('2', '10', 'JACK', 'ACE', etc. )
-
 	- the suit ("SPADES", "HEARTS", "CLUBS", "DIAMONDS")
-
 	- a numeric weight, based on the value ('2' => 2, '10'=> 10, 'JACK' => 11 , 'ACE'=> 14, etc.)
 
 This is the same data produced by the main poker_hand.py and sent when calling the method.
