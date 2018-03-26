@@ -1,4 +1,3 @@
-# poker_hand
 Poker Hand is an application that:
 - accesses five random cards from https://deckofcardsapi.com/
 - prints The values and suits of the cards to the console
